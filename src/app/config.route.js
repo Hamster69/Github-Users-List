@@ -9,13 +9,13 @@
 
 	function appRun($urlRouterProvider, $stateProvider) {
 	    
-	    $urlRouterProvider.otherwise('/home');
-	    
+	    //$urlRouterProvider.otherwise('/home');
+	    /*
 		$stateProvider
 		.state('home', {
 			url: '/home',
 			templateUrl: 'index.html',
 			title: 'main'
-		});
+		});*/
 	}
 })();
