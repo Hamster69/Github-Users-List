@@ -25,11 +25,11 @@
 <body ng-app="app">
     <md-content class="md-padding">
         <md-nav-bar md-no-ink-bar="disableInkBar" md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
-          <md-nav-item md-nav-click="goto('page1')">
-              <a ui-sref="user-repositories-list">User list</a>
+          <md-nav-item md-nav-sref="user-list">
+              <a>User list</a>
           </md-nav-item>
-          <md-nav-item md-nav-click="goto('page2')">
-              <a ui-sref="user-repositories-list">User repositories list</a>
+          <md-nav-item md-nav-sref="repo-list">
+              <a>User repositories list</a>
           </md-nav-item>
         </md-nav-bar>
     </md-content>

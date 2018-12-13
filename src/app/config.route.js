@@ -9,13 +9,17 @@
 
 	function appRun($urlRouterProvider, $stateProvider) {
 	    
-	    //$urlRouterProvider.otherwise('/home');
-	    /*
+	    $urlRouterProvider.otherwise('/userList');
+	    
 		$stateProvider
-		.state('home', {
-			url: '/home',
-			templateUrl: 'index.html',
-			title: 'main'
-		});*/
+		.state('user-list', {
+			url: '/userList',
+			templateUrl: 'Views/UserList.html',
+			title: 'User List'
+		}).state('repo-list', {
+			url: '/repoList',
+			templateUrl: 'Views/RepositoryList.html',
+			title: 'User List'
+		});
 	}
 })();
