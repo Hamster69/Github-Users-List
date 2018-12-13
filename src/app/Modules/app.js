@@ -1,5 +1,5 @@
 (function() {
     'use strict';
     
-    angular.module('app', ['ngMaterial', 'ui.router'])
+    angular.module('app', ['ngMaterial', 'ngMessages', 'ui.router'])
 })();
