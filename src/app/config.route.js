@@ -14,11 +14,13 @@
 		$stateProvider
 		.state('user-list', {
 			url: '/userList',
-			templateUrl: 'Views/UserList.html',
-			title: 'User List'
+			templateUrl: 'Views/user-list.template.html',
+			title: 'User List',
+			controller: "UserListController",
+			controllerAs: 'vm'
 		}).state('repo-list', {
 			url: '/repoList',
-			templateUrl: 'Views/RepositoryList.html',
+			templateUrl: 'Views/repository-list.template.html',
 			title: 'User List'
 		});
 	}

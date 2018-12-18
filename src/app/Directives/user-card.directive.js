@@ -45,7 +45,7 @@
                 userImage: '@'
             },
 
-            templateUrl: 'Directives/UserCard.html',
+            templateUrl: 'Views/user-card.template.html',
             link: linkFunction
         };
         
