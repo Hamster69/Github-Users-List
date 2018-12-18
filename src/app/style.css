@@ -1,0 +1,11 @@
+.card {
+    float: left;
+    width: 20%;
+}
+
+.truncate {
+    width: 150;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
