@@ -21,7 +21,9 @@
 		}).state('repo-list', {
 			url: '/repoList',
 			templateUrl: 'Views/repository-list.template.html',
-			title: 'User List'
+			title: 'Repository List',
+			controller: "RepositoryListController",
+			controllerAs: 'vm'
 		});
 	}
 })();
