@@ -7,16 +7,12 @@
     
         function UserListController(GithupService) {
             var vm = this;
-            //GithupService.authenticate();
-            vm.repositoriesList = GithupService.getRepositories();
+            vm.userList = [];
             
-            vm.loadRepositoryList = function () {
-                //console.log("*******");
-                //console.log(vm.repositoriesList);
-                //return GithupService.getRepositories();
-                return vm.repositoriesList;
-            }
-
-            //vm.loadRepositoryList();
+            GithupService.authenticate();
+            
+            GithupService.getUsers(( success ) => {
+                vm.userList = success;
+            });     
         }
 })();
