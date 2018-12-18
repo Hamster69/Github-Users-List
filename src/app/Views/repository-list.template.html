@@ -1,1 +1,5 @@
-repo list
+<div>
+    <div sm ng-repeat= "repository in vm.repositoryList">
+        <repository-card class="card" layout-margin repo-name={{repository.full_name}} link-git={{repository.html_url}} description={{repository.description}} amount-of-issues={{repository.forks}}></repository-card>
+    </div>
+</div>
