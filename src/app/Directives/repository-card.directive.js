@@ -3,22 +3,22 @@
 
     angular
         .module('app')
-        .directive('userCard', userCard);
+        .directive('repositoryCard', repositoryCard);
 
-    function userCard() {
+    function repositoryCard() {
         function linkFunction (scope) {
         }
         
         var directive = {
             restrict: 'E',
             scope: {
-                name: '@',
-                linkUser: '@',
-                linkRepo: '@',
-                userImage: '@'
+                repoName: '@',
+                linkGit: '@',
+                description: '@',
+                amountOfIssues: '@'
             },
 
-            templateUrl: 'Views/user-card.template.html',
+            templateUrl: 'Views/repository-card.template.html',
             link: linkFunction
         };
         
